@@ -33,7 +33,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Use Unicorn as the app server
 gem 'unicorn'
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv'
+
+gem 'dotenv-deployment', require: 'dotenv/deployment'
 
 
 # Use Capistrano for deployment
