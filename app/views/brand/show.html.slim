@@ -1,0 +1,44 @@
+.row
+  .col-md-2
+    img src="#{@brand.image_url}"
+
+  .col-md-3
+    p
+      b
+        = @manufacturer.name
+        '
+        = @brand.name
+
+.row
+  table.table-bordered
+    tr
+      th
+        | Название
+      th
+        | Модель двигателя
+      th
+        | Мощность, л.с.
+      th
+        | Объем двигателя, л.
+      th
+        | Даты выпуска
+
+    - @brand.modifications.each do |mod|
+
+      tr
+        td
+          = mod.name
+        td
+          = mod.model_motor
+
+        td
+          = mod.power
+
+        td
+          = mod.volume_motor
+
+        td
+
+          | #{mod.start_production} - #{mod.readable_stop_production}
+
+

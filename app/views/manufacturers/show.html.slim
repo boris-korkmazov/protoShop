@@ -1,0 +1,14 @@
+.row
+- @manufacturer.brands.each do |brand|
+  .col-md-6
+    .row
+      .col-md-6
+        a href="#{manufacturer_brand_path(@manufacturer, brand)}"
+          img[src="#{brand.image_url}"]
+
+      .col-md-6
+        p
+          a href="#{manufacturer_brand_path(@manufacturer, brand)}"
+            =brand.name
+        p
+          =brand.years_production

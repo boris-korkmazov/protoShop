@@ -24,12 +24,12 @@ ActiveRecord::Schema.define(version: 20160111112223) do
   add_index "brands", ["manufacturer_id"], name: "index_brands_on_manufacturer_id"
 
   create_table "manufacturers", force: :cascade do |t|
-    t.string   "CreateManufacturers"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  add_index "manufacturers", ["CreateManufacturers"], name: "index_manufacturers_on_CreateManufacturers"
+  add_index "manufacturers", ["name"], name: "index_manufacturers_on_name"
 
   create_table "modifications", force: :cascade do |t|
     t.integer  "brand_id"
