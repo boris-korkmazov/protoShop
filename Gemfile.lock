@@ -72,9 +72,7 @@ GEM
     concurrent-ruby (1.0.0)
     debug_inspector (0.0.2)
     dotenv (2.0.2)
-    dotenv-rails (2.0.2)
-      dotenv (= 2.0.2)
-      railties (~> 4.0)
+    dotenv-deployment (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
     globalid (0.3.6)
@@ -200,7 +198,8 @@ DEPENDENCIES
   capistrano-rvm
   capistrano3-unicorn
   coffee-rails (~> 4.1.0)
-  dotenv-rails
+  dotenv
+  dotenv-deployment
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.5)
