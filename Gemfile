@@ -33,11 +33,15 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Use Unicorn as the app server
 gem 'unicorn'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 
 # Use Capistrano for deployment
 group :development do
   gem 'capistrano-rails', require: false
+  gem 'capistrano3-unicorn', require: false
 end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
