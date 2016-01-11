@@ -25,6 +25,15 @@ namespace :deploy do
     end
   end
 
+  desc "run db:seed"
+  task :seed do
+    on roles(:app), in: :sequence, wait: 5 do
+      within current_path do
+        execute :rake, "db:seed", "RAILS_ENV=production"
+      end
+    end
+  end
+
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:

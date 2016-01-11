@@ -7,6 +7,8 @@
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
 
+set :rails_env, :production
+set :stage, :production
 
 # role-based syntax
 # ==================
