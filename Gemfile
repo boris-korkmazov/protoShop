@@ -38,6 +38,7 @@ gem 'dotenv'
 gem 'dotenv-deployment', require: 'dotenv/deployment'
 
 
+
 # Use Capistrano for deployment
 group :development do
   gem 'capistrano-rails', require: false

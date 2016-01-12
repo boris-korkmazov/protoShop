@@ -13,10 +13,15 @@ html
           a.navbar-brand href="#{root_path}"
             | Prototype Shop
     .container
+
       .col-md-2.col-lg-2.col-sm-2.col-xs-2
 
         = render 'partials/list_manufacturer'
 
       .col-md-10.col-lg-10.col-sm-10.col-xs-10
+
+        div
+
+          =render "partials/breadcrumbs"
 
         = yield

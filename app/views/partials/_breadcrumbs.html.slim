@@ -1,0 +1,10 @@
+- if @breadcrumbs.count > 0
+  ol.breadcrumb
+    - @breadcrumbs.each do |item|
+      li
+        - if item.path
+          a href="#{item.path}"
+            = item.name
+        - else
+          span
+            = item.name
