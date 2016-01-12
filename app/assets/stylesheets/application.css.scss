@@ -2,3 +2,9 @@
 @import "bootstrap";
 @import "manufacturers";
 @import "brand";
+
+body{
+  .hidden{
+    display: none;
+  }
+}

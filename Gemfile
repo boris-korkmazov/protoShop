@@ -37,6 +37,7 @@ gem 'dotenv'
 
 gem 'dotenv-deployment', require: 'dotenv/deployment'
 
+gem 'angularjs-rails'
 
 
 # Use Capistrano for deployment

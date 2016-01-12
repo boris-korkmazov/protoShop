@@ -1,5 +1,5 @@
 doctype html
-html
+html[data-ng-app="ProtoShop"]
   head
     title
       | ProtoShop
@@ -23,5 +23,8 @@ html
         div
 
           =render "partials/breadcrumbs"
-
-        = yield
+        .hidden[show-if-js-enabled="true"]
+         = yield
+        div[data-ng-hide="true"]
+          h1.text-danger
+            | Включите javascript
