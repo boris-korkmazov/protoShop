@@ -7,8 +7,12 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand href="#{root_path}"
+            | Prototype Shop
     .container
-
       .col-md-2.col-lg-2.col-sm-2.col-xs-2
         ul
           -@manufacturers.each do |manufacturer|

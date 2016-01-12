@@ -19,3 +19,4 @@
 database.yml
 secrets.yml
 .sqlite3
+public/assets
