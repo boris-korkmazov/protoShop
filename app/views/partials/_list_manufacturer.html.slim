@@ -1,0 +1,4 @@
+div.list-group
+  -@manufacturers.each do |manufacturer|
+    a[class="list-group-item #{active_class(manufacturer_path(manufacturer))}" href=manufacturer_path(manufacturer)]
+      =manufacturer.name

@@ -14,11 +14,9 @@ html
             | Prototype Shop
     .container
       .col-md-2.col-lg-2.col-sm-2.col-xs-2
-        ul
-          -@manufacturers.each do |manufacturer|
-            li
-              a[href="#{manufacturer_path(manufacturer)}"]
-                =manufacturer.name
+
+        = render 'partials/list_manufacturer'
 
       .col-md-10.col-lg-10.col-sm-10.col-xs-10
+
         = yield
