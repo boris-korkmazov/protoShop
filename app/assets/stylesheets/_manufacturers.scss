@@ -1,0 +1,27 @@
+body{
+  .manufacturer-wrapper {
+
+    display: block;
+
+    color: #000000;
+
+    border: 2px solid transparent;
+
+    transition: all 500ms;
+
+    border-radius: 3px;
+
+    .name{
+
+      color: #1b6d85;
+
+    }
+
+    &:hover{
+      border: 2px solid #269abc;
+
+    }
+
+  }
+
+}

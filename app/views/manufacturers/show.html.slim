@@ -2,13 +2,13 @@
 - @manufacturer.brands.each do |brand|
   .col-md-6
     .row
-      .col-md-6
-        a href="#{manufacturer_brand_path(@manufacturer, brand)}"
+      a.manufacturer-wrapper.col-md-9 href="#{manufacturer_brand_path(@manufacturer, brand)}"
+        .col-md-6
           img[src="#{brand.image_url}"]
 
-      .col-md-6
-        p
-          a href="#{manufacturer_brand_path(@manufacturer, brand)}"
+        .col-md-6
+          p.name
             =brand.name
-        p
-          =brand.years_production
+          p
+            =brand.years_production
+        .clearfix
